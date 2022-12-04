@@ -8,8 +8,9 @@ namespace StoreMagic.Models
     public class Vans
     {
         public int Id { get; set; }
-        public string? Nombre { get; set; }
-        public string? Genre { get; set; }
-        public decimal Price { get; set; }
+        public string Nombre { get; set; }
+        public decimal? Precio { get; set; }
+        public decimal Disponibles { get; set; }
+
     }
 }
