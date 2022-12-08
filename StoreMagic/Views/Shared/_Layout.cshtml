@@ -9,43 +9,86 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">StoreMagic</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Vans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">timberland</a>
+                            <a class="nav-link active" aria-current="page" href="#">Nike</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nike</a>
-                        </li>
-
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+
+
+
+
+    <div class="wrap">
+        <h1>Escoge tu Categoria</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+            </div>
+            <section class="products-list">
+                <div class="product-item" category="laptops">
+                    <img src="images/Logo-VANS.png"  width="150" alt="">
+                    <a href="">Vans</a>
+                </div>
+                <div class="product-item" category="laptops">
+                    <img src="images/Logo-VANS.png" width="150" alt="">
+                    <a href="#">Nike</a>
+                </div>
+                <div class="product-item" category="smartphones">
+                    <img src="images/Logo-VANS.png" width="150" alt="">
+                    <a href="#">converse </a>
+                </div>
+
+                <div class="product-item" category="ordenadores">
+                    <img src="images/Logo-VANS.png" width="150" alt="">
+                    <a href="#">Camisas</a>
+                </div>
+                <div class="product-item" category="ordenadores">
+                    <img src="images/Logo-VANS.png" width="150" alt="">
+                    <a href="">Pantalones</a>
+                </div>
+
+            </section>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - StoreMagic - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+
+
+
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
+

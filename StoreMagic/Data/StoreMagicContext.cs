@@ -15,6 +15,7 @@ namespace StoreMagic.Data
 
         }
         public DbSet<StoreMagic.Models.Vans> Vans { get; set; }
+        public DbSet<StoreMagic.Models.Nike> Nike { get; set; }
 
 
     }
